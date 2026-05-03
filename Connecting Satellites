@@ -18,9 +18,9 @@ number_of_satellite = 8
 def create_satellites():
     global start_time
     for count in range(0,number_of_satellite):
-        satellites = Actor("satellite")
-        satellites.pos = randint(40,WIDTH-40),randint(40,HEIGHT-40)
-        satellites.append(satellite)
+        satellite = Actor("satellite")
+        satellite.pos = randint(40,WIDTH-40),randint(40,HEIGHT-40)
+        satellite.append(satellite)
     start_time = time()
 
 
